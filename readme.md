@@ -1,0 +1,1 @@
+Api para reto React modificada segun las necesidades encontradas al conectar la api con el front end
