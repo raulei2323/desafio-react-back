@@ -1,4 +1,6 @@
+const cors = require("cors")
 const express = require('express')
+
 
 const postsRouter = require("./routes/posts.router")
 const usersRouter = require("./routes/users.router")
@@ -7,6 +9,7 @@ const authRouter = require("./routes/auth.router")
 
 const app = express()
 
+app.use(cors())
 app.use(express.json())
 
 app.use("/post", postsRouter)
