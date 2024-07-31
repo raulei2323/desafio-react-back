@@ -24,7 +24,7 @@ router.get("/", auth, async (request, response) => {
         const userCreated = await usersUsecase.create(request.body)
         response.json({
             success: true,
-            data: { user: userCreated}
+            user: userCreated
         })
     } catch (error) {
         response.status(error.status || 500)
