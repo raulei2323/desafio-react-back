@@ -6,13 +6,13 @@ const schema = new mongoose.Schema({
         type: String,
         required: true,
         minLength: 1,
-        maxLength: 100,
+        maxLength: 300,
     },
     content: {
         type: String,
         required: true,
         minLength: 1,
-        maxLength: 500,
+        maxLength: 5000,
     },
     cratedAt: {
         type: Date,
