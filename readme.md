@@ -8,5 +8,6 @@ POST /post para crear un post sera necesario mandar en el body de la peticion un
 {
     "content": "your post content"
 }
+con el token que nos dio el inicio de sesion en el header Authorization.....
 
 GET /post para obtener todos los post que existan en la base de datos

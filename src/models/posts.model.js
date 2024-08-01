@@ -2,6 +2,12 @@ const mongoose = require('mongoose')
 const modelName = "post"
 
 const schema = new mongoose.Schema({
+    title: {
+        type: String,
+        required: true,
+        minLength: 1,
+        maxLength: 100,
+    },
     content: {
         type: String,
         required: true,
