@@ -2,11 +2,20 @@ const mongoose = require('mongoose')
 const modelName = "post"
 
 const schema = new mongoose.Schema({
+    thumbnail: {
+        type: String,
+        required: false,
+    },
     title: {
         type: String,
         required: true,
         minLength: 1,
         maxLength: 300,
+    },
+    hashtags: {
+        type: String,
+        required: false,
+
     },
     content: {
         type: String,
